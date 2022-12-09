@@ -6,8 +6,11 @@ $data = [
 
 
 if(isset($data['name'])){
-    echo "My Name Is"." ".$data['name'];
+    echo $data['name'].PHP_EOL;
 }else{
-    echo "No Data";
-    
+    echo "No Data".PHP_EOL;
 }
+
+// or use can use Ternary Operator is Verry Simple;
+$simple = $data['name'] ?? "No Data";
+echo "$simple";
